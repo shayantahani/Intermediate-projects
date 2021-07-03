@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1a6aff;
+    font-family:'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cont{
+    margin: 50px auto;
+    text-align: center;
+}
+.title{
+    color: #f3f3f3;
+    padding: 50px;
+}
+.form{
+    margin: auto;
+    width: 400px;
+    height: 70px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+}
+ul{
+    margin: 12px auto;
+    width: 400px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .4s ease-in-out;
+    border-radius: 12px;
+}
+li{
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #1a6aff;
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+.user{
+    padding: 15px;
+    width: 350px;
+    height: 70px;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    border: none;
+}
+.done{
+    background-color: rgb(32, 233, 32);
+    transition: all .4s ease-in-out;
+}
+.delete{
+    display: none;
+}
+.Bg-btn{
+    background-color: red;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+.Bg-btn:active{
+    border-bottom: none;
+}
+.btn-user{
+    width: 50px;
+    height: 70px;
+    background-color: blue;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+}
+.btn-user:active{
+    background-color: #f3f3f3;
+}
