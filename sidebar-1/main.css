@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #4afbb7;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: rgb(5, 5, 98);
+    position: fixed;
+    left: -300px;
+    transition: all .4s ease-in-out;
+}
+.sidebar header {
+    font-size: 35px;
+    text-align: start;
+    line-height: 50px;
+    padding: 10px;
+    color: rgb(243, 243, 243);
+}
+ul {
+    list-style-type: none;
+    transition: all 0.4s ease-in-out;
+}
+ul li a {
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+}
+ul li {
+    font-size: 26px;
+    padding: 25px 0;
+    border-top: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(90, 87, 87);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+ul li:hover a {
+    position: relative;
+    left: 20px;
+}
+ul li:hover {
+    background-color: rgb(5, 5, 83);
+}
+ul li i {
+    padding: 10px;
+}
+#check {
+    display: none;
+}
+label #Open,
+label #Close {
+    position: absolute;
+    cursor: pointer;
+}
+label #Open {
+    font-size: 40px;
+    top: 25px;
+    left: 150px;
+    background-color: rgb(23, 23, 148);
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+label #Close {
+    z-index: 11;
+    font-size: 30px;
+    left: -250px;
+    top: 10px;
+    border-radius: 30px;
+    border-bottom: 5px solid black;
+    background-color: rgb(23, 23, 148);
+    padding: 10px;
+}
+label #Close:active {
+    top: 15px;
+    border-bottom: none;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #Open{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+#check:checked ~ label #Close{
+    left: 250px;
+    transition: all .4s ease-in-out;
+}
+@media screen and (max-height:650px){
+    .sidebar header{
+        font-size: 20px;
+        line-height: 10px;
+    }
+    ul li{
+        font-size: 14px;
+    }
+    label #Close {
+        font-size:10px ;
+        top: 5px;
+        padding: 5px;
+        border-bottom: 2px solid black;
+    }
+    label #Close:active {
+        top: 6px;
+        border-bottom: none;
+    }
+    label #Open{
+        font-size: 25px;
+    }
+}
