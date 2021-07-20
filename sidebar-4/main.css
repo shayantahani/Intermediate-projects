@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #be0006;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* start sidebar panel */
+.sidebar{
+    width: 74px;
+    height: 95vh;
+    margin: 15px;
+    background-color: #f61c24f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 17px;
+    transition: all .4s ease-in-out;
+}
+.openside{
+    width: 278px;
+}
+.bar{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+#btn{
+    margin-left: 10px;
+    padding: 10px;
+    background: #f02229f5;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+}
+/* .sidebar.openside .side-section{
+    
+} */
+.img-panel{
+    width: 65px;
+    height: 65px;
+    margin:0 6px;
+}
+.side-section{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin:0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar.openside .side-section{
+    width: 250px;
+    height: 60px;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.side-section:hover{
+    background: #fb8d90f5;
+    border-radius: 15px;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.icons{
+    margin: 10px;
+    padding:10px;
+    font-size: 1.8rem;
+}
+.sidebar.openside .icons{
+    padding: 15px;
+    margin: 7px;
+    font-size: 1.8rem;
+}
+.link-name{
+    display: none;
+    padding-left: 5px;
+}
+.sidebar.openside .link-name{
+    display: block;
+}
+.info-txt{
+    display: none;
+}
+.sidebar.openside .info-txt{
+    display: block;
+}
