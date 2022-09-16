@@ -71,16 +71,12 @@ body {
 .user-logo {
     position: absolute;
     margin: auto 5px;
-}
-.user-logo:hover {
-    color: #cacaca;
+    color: #747373;
 }
 .lock {
     position: absolute;
     margin: auto 5px;
-}
-.lock:hover {
-    color: #cacaca;
+    color: #747373;
 }
 .login-btn {
     margin-top: 25px;
