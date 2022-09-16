@@ -32,7 +32,7 @@ body{
     background-color: var(--bg-header);
 }
 .logo-icon{
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 8px;
 }
 .header-text{
@@ -72,7 +72,7 @@ body{
     box-shadow: none;
 }
 #search{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     text-align: center;
     color: whitesmoke;
 }
@@ -81,9 +81,11 @@ body{
     outline: none;
     border: none;
     padding: 6px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: whitesmoke;
     opacity: 1;
+    width: 120px;
+    border-radius: 20%;
 }
 .link{
     color: var(--text);
