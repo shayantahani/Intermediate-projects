@@ -1,0 +1,977 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* navbar design */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 7px;
+    font-family: iranyekanwebmedium, Helvetica, sans-serif;
+    width: 1170px;
+    margin:  auto;
+    background-color: rgba(255, 255, 255, 0.72);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    z-index: 30;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.log-img{
+    margin: 21px;
+}
+.nav-links{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-obj{
+    margin: 15px;
+    padding: 10px;
+    font-size: 0.8rem;
+    align-content: center;
+}
+.nav-btn{
+    cursor: pointer;
+    padding: 15px;
+    color: #28457b;
+    background-color: rgba(232, 239, 254,0.6);
+    border-radius: 30% / 60% ;
+    font-size: 0.7rem;
+    font-family: YekanBakhBold;
+}
+.nav-btn:hover{
+    background-color: #fbf6d9;
+}
+/* hamburger menu */
+.hamburger-icon{
+    width: 30px;
+    margin: 12px;
+    display: none;
+    cursor: pointer;
+}
+.hamburger-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:#fff;
+    z-index: 10;
+    width: 100%;
+    font-family: YekanBakhMedium;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+}
+.cross{
+    text-align: left;
+    width: 100%;
+    padding: 25px 0;
+}
+.cross-icon{
+width: 20px;
+margin-left: 30px;
+cursor: pointer;
+}
+.menu-items{
+    padding: 10px 30px;
+}
+.menu-items a{
+    color: black;
+    display: inline-block;
+}
+.line{
+    height: 1px;
+    background-color: #dfe1e4;
+    width: 90%;
+    margin: 15px 10px;
+}
+.menu-item{
+    list-style-type: none;
+}
+.my-zarin{
+    display: flex;
+    background-color: #eee;
+    padding: 20px 50px;
+    font-size: 0.85rem;
+}
+.arrow-zarin{
+    margin: 5px;
+}
+@keyframes Hamburger{
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.show-hamburger-menu{
+    animation: Hamburger 0.29s forwards;
+}
+.link{
+    color: #303030;
+}
+.fa-solid{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-right: 7px;
+}
+/* dropdowns */
+#show-more-menu{
+    position: relative;
+}
+#show-more-menu ul {
+    position: absolute;
+    top:25px;
+    left: -35px;
+    background-color: #fff;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 23px;
+    list-style: none;
+    width: 123px;
+    display: none;
+  }
+#show-more-menu li{
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: black;
+}
+#show-more-menu li:hover{
+    background-color: rgba(232,239,254,0.6);
+}
+#show-product-menu{
+    position: relative;
+}
+.product-menu {
+    position: absolute;
+    top: 25px;
+    left: -135px;
+    background-color: #fff;
+    display: none;
+    justify-content: flex-start;
+    width: 372px;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 5px;
+    margin-top: 23px;
+  }
+.product-menu a p:first-child{
+    color: #000;
+    font-size: 0.85rem;
+}
+.product-menu a{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.product-menu a p:last-child{
+    color: #000;
+    font-size: 0.7rem;
+}
+.product-menu a:hover{
+    background-color: rgba(232,239,254,0.6);
+}
+/* banner */
+.banner{
+    width: 1170px;
+    padding: 124px 60px 80px;
+    background-image:  linear-gradient(135deg, #21254e, #2b4a83);
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content h3{
+    font-family: YekanBakhHeavy;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.content p{
+    color: #fff;
+    font-size: 0.85rem;
+    margin: 25px 0;
+    line-height: 2.5rem;
+    font-family: YekanBakhMedium;
+}
+.banner-img{
+    width: 1720px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.banner-buttons{
+    margin-top: 60px;
+    padding: 24px;
+}
+.submit-btn{
+    font-family: iranyekanwebmedium;
+    background-color: #ffd900;
+    padding: 10px;
+    color: #000;
+    border-radius: 20% / 35%;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+}
+.sign-in{
+    font-family: iranyekanwebmedium;
+    background-color: #3a63ae;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20% / 35%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.go-down{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 58px;
+    position: relative;
+}
+.go-down div{
+    background-image: url("../images/arrowbottom.svg");
+    width: 164px;
+    height:78px ;
+    z-index: 20;
+}
+.down-link{
+   position: relative;
+   width: 16px;
+   font-weight: bold;
+   top: -60px;
+   color: #000;
+   z-index: 25;
+}
+/* cards */
+.card{
+    width: 1170px;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.card-img-1{
+    width: 500px;
+    height: 440px;
+    margin: 10px;
+}
+.social-card{
+    width: 1170px;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 120px;
+}
+.social-card-img{
+    width: 550px;
+    height: 500px;
+}
+.zarin-card{
+    width: 1170px;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+.zarin-card-img{
+    width: 400px;
+    height: 500px;
+    margin: 0 70px;
+    padding: 20px;
+}
+.zarin-plus-card{
+    width: 1170px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin: 0 auto;
+}
+.zarin-plus-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.zarin-plus-card-img{
+    width: 460px;
+    height: 500px;
+    margin: 75px;
+}
+.card-payout{
+    width: 1170px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+.card-payout-img{
+    width:600px;
+    height: 450px;
+    margin-right:45px;
+}
+.card-payout-text h3{
+    font-family:YekanBakhMedium ;
+    color: #747480;
+    font-size: 1rem
+}
+.card-payout-text h2{
+    font-family:YekanBakhMedium ;
+}
+.card-payout-text p{
+    font-family: iranyekanwebregular;
+    line-height: 1.9rem;
+}
+.card-content-1{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.card-text h3{
+    font-family:YekanBakhMedium ;
+    color: #747480;
+    font-size: 1rem;
+}
+.card-text h2{
+    font-family:YekanBakhMedium ;
+}
+.card-text p{
+    font-family: iranyekanwebregular;
+    line-height: 1.97rem;
+}
+.btn-yellow{
+    outline: none;
+    border: none;
+    background-color: #ffd900;
+    color: #000;
+    font-size: 0.7rem;
+    font-family:iranyekanwebmedium ;
+    padding: 10px;
+    border-radius: 10% / 35%;
+    cursor: pointer;
+    margin: 5px;
+
+}
+.btn-more-about{
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 0.7rem;
+    font-family:iranyekanwebmedium ;
+    padding: 10px;
+    border-radius: 10% / 35%;
+    cursor: pointer;
+}
+.inner-more{
+    display: flex;
+    align-items: center;
+}
+.card-buttons{
+    padding: 10px;
+    margin: 20px 0 0 0;
+}
+.chekered{
+    display: flex;
+    width: 1170px;
+    height: 700px;
+    margin: 0 auto;
+    align-items: baseline;
+}
+.chekered-text {
+    width: 40%;
+    margin: 15px;
+}
+.chekered-text h1{
+    font-family: YekanBakhHeavy;
+    font-size: 1.6rem;
+}
+.chekered-text p{
+    font-family:  iranyekanwebregular;
+    width: 350px;
+    margin: 25px 0 25px 0;
+    line-height:50px;
+    font-size: 0.7rem;
+    text-align: justify;
+}
+.check-items{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    text-align: justify;
+}
+.logo-text{
+    width: 100%;
+    display: flex;
+    font-family:  iranyekanwebregular;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.check-item{
+    width: 330px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    font-family:  YekanBakhMedium;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+.border-left{
+    border-left: 1px solid #dfe1e4;
+}
+.border-bottom{
+    border-bottom: 1px solid #dfe1e4;
+}
+.border-right{
+    border-right: 1px solid #dfe1e4;
+}
+.border-top{
+    border-top: 1px solid #dfe1e4;
+}
+.check-item p {
+    text-align: justify;
+    margin: 15px;
+    line-height: 35px;
+}
+.check-item img{
+    width: 65px;
+    height: 65px;
+}
+@keyframes showUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.join-zarin{
+    width: 1170px;
+    height: 220px;
+    margin: 25px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #cbcbcb ;
+    border-radius: 22px;
+    font-family: YekanBakhBold;
+}
+.join-zarin h4{
+    color: #9a9a9a;
+    font-family:YekanBakhBold;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.support-section{
+    width: 1170px;
+    height: 70px;
+    padding: 12px;
+    display: flex;
+    font-size: 0.9rem;
+    margin: 22px auto;
+    justify-content: space-around;
+    font-family: YekanBakhBold;
+    align-items: center;
+    background: #fbf6f1;
+    border-radius: 30px;
+}
+.support-section span{
+    font-size: 1rem;
+    margin: 0 5px;
+}
+.support-section a{
+    margin-right: 25px;
+}
+.support-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.support-link img{
+    margin-right: 5px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: YekanBakhMedium;
+    margin: 12px;
+}
+footer h3{
+    font-size: 1rem;
+}
+footer ul{
+    list-style-type: none;
+    text-decoration: none;
+    text-align: justify;
+}
+footer ul li a{
+    margin: 6px;
+    font-size: 0.8rem;
+    color: #000;
+}
+.social-logos{
+    display: flex;
+    flex-direction: column;
+}
+.social-logos div{
+    display: flex;
+}
+.social-logo{
+    width: 45px;
+    height: 45px;
+    margin: 13px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    background-color: rgba(232, 239, 254,0.6);
+}
+.social-logo:hover{
+    background-color: white;
+}
+@media (max-width:1200px) {
+    .header{
+        width: 940px;
+    }
+    .support-section{
+        width: 940px;
+        margin: 100px auto 0 auto;
+    }
+    .banner{
+        flex-direction: column;
+        width: 940px;
+    }
+    .banner-img{
+        width: 500px;
+    }
+    .card{
+        flex-direction: column;
+        width: 940px;
+        margin-top: 70px;
+    }
+    .social-card{
+        flex-direction: column;
+        width: 940px;
+    }
+    .zarin-card{
+        flex-direction: column;
+        width: 940px;
+    }
+    .zarin-card-img{
+        width: 460px;
+        height: 420px;
+        margin: 0 70px;
+        padding: 20px;
+    }
+    .card-payout{
+        margin-top: 100px;
+    }
+    .card-payout{
+        width: 940px;
+    height: 800px;
+    flex-direction: column;
+        align-items: end;
+    margin-top: 100px;
+    }
+    .social-card img{
+        display: none;
+    }
+    .zarin-plus-card{
+        margin-top: 100px;
+        width: 940px;
+        flex-direction: column;
+        align-items: end;
+    }
+    .chekered{
+        width: 940px;
+        margin-top: 350px;
+        flex-direction: column;
+        width: auto;
+    }
+    .chekered-text{
+        width: 940px;
+        margin: 0 auto;
+    }
+    .chekered-text p{
+        font-family:  iranyekanwebregular;
+        width:100%;
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+    footer{
+        width: 940px;
+        margin: 70px;
+    }
+    .check-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    text-align: justify;
+    margin: 0 auto;
+    }
+    .join-zarin{
+        width: 940px;
+        margin: 220px auto 0 auto;
+    }
+}
+@media (max-width:990px){
+    .header{
+        width: auto;
+        padding: 20px 60px;
+    }
+    .chekered{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 850px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .support-section{
+        width: auto;
+        height: 55px;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin: 22px 25px;
+        font-family: YekanBakhBold;
+        align-items: center;
+        background: none;
+        border-radius: 30px;
+    }
+    .support-section h3{
+        font-size: 1rem;
+    }
+    .support-section span{
+        margin: 10px;
+    }
+    .support-link{
+        margin: 10px;
+        background: #fbf6f1;
+        padding: 10px;
+        text-align: start;
+        font-size: 1rem;
+        border-radius: 30px;
+    }
+    .chekered-text{
+        margin-top: 222px;
+        margin-bottom: 120px;
+        width: auto;
+        height: 55px;
+        padding: 55px;
+        text-align: start;
+    }
+    footer{
+        width: 840px;
+    }
+    .join-zarin{
+        width: 840px;
+        margin-top: 330px;
+    }
+    .check-item img{
+        width: 55px;
+        height: 55px;
+    }
+    .chekered-text h1{
+        font-size: 1.2rem;
+    }
+    .check-item p {
+        text-align: start;
+        margin: 5px;
+        line-height: 35px;
+    }
+    .check-item{
+        width: 270px;
+        height: 270px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        font-family:  YekanBakhMedium;
+        justify-content: center;
+        font-size: 0.74rem;
+    }
+    .check-item h2{
+        font-size: 1rem;
+    }
+    .check-items{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+    .border-left{
+        border-left:none;
+    }
+    .border-bottom{
+        border-bottom:none;
+    }
+    .border-right{
+        border-right: none;
+    }
+    .border-top{
+        border-top:none;
+    }
+    .banner{
+        text-align: center;
+        width: auto;
+        margin: 20px;
+    }
+    .banner-img{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .log-img{
+        margin: 0;
+    }
+    .card{
+        flex-direction: column;
+        width: auto;
+        margin-top: 70px;
+    }
+    .social-card{
+        flex-direction: column;
+        width: auto;
+    }
+    .zarin-card{
+        flex-direction: column;
+        width: auto;
+    }
+    .zarin-card-img{
+        width: 460px;
+        height: 420px;
+        margin: 0 70px;
+        padding: 20px;
+    }
+    .card-payout{
+        width: auto;
+    height: 800px;
+    flex-direction: column;
+        align-items: end;
+    margin-top: 130px;
+    }
+    .social-card img{
+        display: none;
+    }
+    .zarin-plus-card{
+        margin-top: 100px;
+        width:auto;
+        flex-direction: column;
+        align-items: end;
+    }
+}
+@media (max-width:768px){
+    .nav-links{
+        display: none;
+    }
+    main{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .content h3{
+        font-size: 1.4rem;
+    }
+    .zarin-card{
+        width: auto;
+    }
+    .card-payout{
+        width: auto;
+    }
+    .zarin-plus-card{
+        width: auto;
+    }
+    .chekered{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    footer{
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.55rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer h3{
+        font-size: 0.7rem;
+    }
+    .social-logo{
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+        padding: 5px;
+    }
+    .support-section{
+        width: auto;
+        height: 200px;
+        margin: 10px;
+    }
+    .chekered-text{
+        width: auto;
+        text-align: start;
+    }
+    .join-zarin{
+        width: auto;
+        font-size: 1.2rem;
+    }
+    .banner{
+        text-align: right;
+        padding: 50px 30px 30px;
+        margin: 20px 15px;
+    }
+    .banner-buttons{
+        margin-top: 16px;
+        margin-bottom: 15px;
+        padding: 14px;
+        text-align: center;
+    }
+    .submit-btn{
+        margin: 5px;
+    }
+    .content p{
+        font-size: 0.83rem;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+    .header{
+        width: auto;
+        padding: 10px 8px;
+    }
+    .card img{
+        display: none;
+    }
+    .social-card img{
+        display: none;
+    }
+    .zarin-card-img{
+        display: none;
+    }
+    .card-payout img{
+        display: none;
+    }
+    .card-payout{
+        width: auto;
+        margin: auto 0;
+    }
+    .zarin-plus-card{
+        width: auto;
+        margin: auto 0;
+    }
+    .check-item img{
+        width: 55px;
+        height: 55px;
+    }
+    .check-item p {
+        text-align: justify;
+        margin: 5px;
+        line-height: 35px;
+    }
+    .check-items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 80px;
+        text-align: justify;
+    }
+    .card img{
+        display: block;
+        margin: 10px;
+    }
+    .check-item{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        margin: 30px;
+        justify-content: baseline;
+        align-items: center;
+        font-family:  YekanBakhMedium;
+        justify-content: center;
+        font-size: 0.75rem;
+    }
+    .card{
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 10px;
+    }
+    .card-payout{
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 10px;
+        padding: 0;
+    }
+    .social-card{
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    .zarin-card{
+        width: 400px;
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+    .zarin-card-img{
+        display: block;
+        width: 400px;
+    }
+    .zarin-plus-card{
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        height: 70px;
+    }
+    .join-zarin{
+        width: auto;
+        font-size: 0.8rem;
+    }
+    .zarin-plus-card img{
+        display: none;
+    }
+}
